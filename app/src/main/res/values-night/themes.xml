@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.JustJava" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorSurface">#1dd153</item>
+        <item name="colorPrimary">#1dd153</item>
+        <item name="colorPrimaryDark">#90e089</item>
+        <item name="colorAccent">#1dd153</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorButtonNormal">#1dd153</item>
+    </style>
+</resources>

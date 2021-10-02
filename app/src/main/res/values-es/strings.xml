@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <string name="coffee">Cafe</string>
+    <string name="app_name">Cafe Ordenar</string>
+    <string name="hint">Nombre</string>
+    <string name="toppings">Ingredientes</string>
+    <string name="wc">Crema batida</string>
+    <string name="c">Chocolate</string>
+    <string name="quantity">Cantidad</string>
+    <string name="os">Oredenar Resumen</string>
+    <string name="order">Ordenar</string>
+    <string name="name_bp">Nombre :</string>
+    <string name="thanks">iGracias!</string>
+    <string name="for_mail">para</string>
+    <string name="none">No</string>
+    <string name="price">Precio</string>
+    <string name="peyn">por favor, escriba su nombre</string>
+    <string name="less">La cantidad no puede ser inferior a 1</string>
+    <string name="more">La cantidad no puede ser superior a 100</string>
+</resources>

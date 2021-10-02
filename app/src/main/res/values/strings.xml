@@ -1,0 +1,19 @@
+<resources>
+    <string name="coffee">Coffee</string>
+    <string name="app_name">Coffee Order</string>
+    <string name="hint">Name</string>
+    <string name="toppings">Toppings</string>
+    <string name="wc">Waggle cream</string>
+    <string name="c">Chocolate</string>
+    <string name="quantity">Quantity</string>
+    <string name="os">Order summary</string>
+    <string name="order">Order</string>
+    <string name="name_bp">Name : </string>
+    <string name="thanks">Thank You!</string>
+    <string name="for_mail">for</string>
+    <string name="none">None</string>
+    <string name="price">Price</string>
+    <string name="peyn">Please enter your name</string>
+    <string name="less">"Quantity can't less than 1"</string>
+    <string name="more">"Quantity can't more than 100"</string>
+</resources>

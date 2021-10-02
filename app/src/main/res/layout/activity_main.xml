@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/app_name"
+            android:textSize="36sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/hint"
+            app:startIconDrawable="@drawable/ic_person"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            app:errorEnabled="true"
+            app:counterMaxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/heading"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/wccb"
+            style="@style/checkbox"
+            android:onClick="checkBox1"
+            android:text="@string/wc" />
+
+        <CheckBox
+            android:id="@+id/ccb"
+            style="@style/checkbox"
+            android:onClick="checkBox2"
+            android:text="@string/c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/quantity"
+            android:textAllCaps="true"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:onClick="decrement"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="1"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:onClick="increment"
+                android:text="+" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/heading"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="$5.00"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/order"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

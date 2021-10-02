@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coffee">కాఫీ</string>
+    <string name="app_name">కాఫీ ఆర్డర్</string>
+    <string name="hint">పేరు</string>
+    <string name="toppings">టాపింగ్</string>
+    <string name="wc">వోగ్లే క్రీమ్</string>
+    <string name="c">చాక్లెట్</string>
+    <string name="quantity">పరిమాణం</string>
+    <string name="os">కొనుగోలు వివరణ</string>
+    <string name="order">ఆర్డర్</string>
+    <string name="name_bp">పేరు :</string>
+    <string name="thanks">ధన్యవాదాలు!</string>
+    <string name="for_mail">నుండి</string>
+    <string name="none">ఏదీ లేదు</string>
+    <string name="price">ధర</string>
+    <string name="peyn">దయచేసి మీ పేరు నమోదు చేయండి</string>
+    <string name="less">కాఫీ 1 కన్నా తక్కువ ఉండకూడదు</string>
+    <string name="more">కాఫీ 100 కంటే ఎక్కువ ఉండకూడదు</string>
+</resources>
