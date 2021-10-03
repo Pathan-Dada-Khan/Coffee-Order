@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextInputLayout inputLayout = (TextInputLayout)findViewById(R.id.textInputLayout);
         Button button=(Button) findViewById(R.id.button);
-        EditText n = (EditText) findViewById(R.id.name);
-        n.addTextChangedListener(new TextWatcher() {
+        EditText name = (EditText) findViewById(R.id.name);
+        name.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = n.getText().toString();
-                if(name.isEmpty()){
+                String layoutName = name.getText().toString();
+                if(layoutName.isEmpty()){
                     inputLayout.setError("Enter your name");
                 }
                 else {
@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
                         t = getString(R.string.wc);
                     else if (hasCc.isChecked())
                         t = getString(R.string.c);
-                    String mail=getString(R.string.name_bp)+name+ "\n"+getString(R.string.toppings)+" : " + t + "\n"+getString(R.string.quantity)+" : " + qun + "\n"+getString(R.string.price)+" : $" + (price + 5) * qun + ".00" + "\n"+getString(R.string.thanks);
+                    String mail=getString(R.string.name_bp)+layoutName+ "\n"+getString(R.string.toppings)+" : " + t + "\n"+getString(R.string.quantity)+" : " + qun + "\n"+getString(R.string.price)+" : $" + (price + 5) * qun + ".00" + "\n"+getString(R.string.thanks);
                     Intent intent = new Intent(Intent.ACTION_SENDTO);
                     intent.setData(Uri.parse("mailto:"));
-                    intent.putExtra(Intent.EXTRA_SUBJECT,getString(R.string.app_name)+" "+getString(R.string.for_mail)+" "+name);
+                    intent.putExtra(Intent.EXTRA_SUBJECT,getString(R.string.app_name)+" "+getString(R.string.for_mail)+" "+layoutName);
                     intent.putExtra(Intent.EXTRA_TEXT,mail);
                     startActivity(intent);
-                    n.setText("");
+                    name.setText("");
                     qun = 1;
                     price = 0;
                     hasWc.setChecked(false);
